@@ -31,51 +31,111 @@
             <a href="#formulario" class="navegador_obj">Contacto</a>
         </div>
     </nav>
+
     <main class="contenedor">
+        <h2>Mis Datos</h2>
 
-        <article class="misDatos personal">
-            <h2>Mis Datos</h2>
+        <section class="misDatos">
+            <article class="personal">
+                <div class="datos">
+                    <h3>nombre y apellido <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg></h3>
+                    <p>Cristian Roberto Sanchez</p>
+                </div>
+    
+                <div class="datos">
+                    <h3>dni</h3>
+                    <p>26240747</p>
+                </div>
+    
+                <div class="datos">
+                    <h3>nacionalidad</h3>
+                    <p>Argentino</p>
+                </div>
+            </article>
 
-            <div class="datos">
-                <h3>nombre y apellido</h3>
-                <p>Cristian Roberto Sanchez</p>
-            </div>
+            <article class="infoPersonal">
+                <div class="datos">
+                    <h3>direccion <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg></h3>
+                    <p>Pablo Poggio 661, Villa Bosch</p>
+                </div>
+                <div class="datos correo">
+                    <h3>correo <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg></h3>
+                    <p>critian-r-sanchez@outlook.com</p>
+                </div>
+                <div class="datos">
+                    <h3>telefono <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg></h3>
+                    <p>11-2406-5292</p>
+                </div>
+            </article>
+        </section>
+        
+    </main>
 
-            <div class="datos">
-                <h3>dni</h3>
-                <p>26240747</p>
-            </div>
+    <section class="laboral">
+        <h2>Experiencia Laboral</h2>
 
-            <div class="datos">
-                <h3>nacionalidad</h3>
-                <p>Argentino</p>
-            </div>
-        </article>
-
-        <article class="misDatos">
-            <h2>Experiencia Laboral</h2>
-
-            <div class="datos">
+        <article class="trabajos">
+            <div class="trabajo">
                 <h3>PSA Peugeot Citröen</h3>
                 <p>Operario de produccion senior</p>
                 <p>2003 / 2013</p>
             </div>
-
-            <div class="datos">
+    
+            <div class="trabajo">
                 <h3>Phillips</h3>
                 <p>Operario de produccion senior</p>
                 <p>2014 / 2015</p>
             </div>
-
-            <div class="datos">
+    
+            <div class="trabajo">
                 <h3>COTO CICSA</h3>
                 <p>Tecnico Senior</p>
                 <p>sector "Dispositivos Moviles"</p>
                 <p>2016 / hoy en dia</p>
             </div>
         </article>
-    </main>
-    <section class="Estudios y conocimientos">
+    </section>
+
+    <section class="conocimientos">
+        <h2>Estudios y conocimientos</h2>
+
+        <article class="aprendizaje">
+            <div class="estudios">
+                <h3>Lenguajes</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+    
+            <div class="frameworks">
+                <h3>Frameworks</h3>
+    
+                <ul>
+                    <li>SASS</li>
+                    <li>GULP</li>
+                    <li>Bootstrap 5</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
+        </article>
 
     </section>
 
@@ -107,7 +167,6 @@
                     <label for="">Mensaje</label>
                     <textarea class="input-text" name="" id="" cols="20" rows="5"></textarea>
                 </div>
-
             </div>  <!-- .contenedor-campos, cierre -->
 
             <div class="alinear-derecha">
@@ -116,12 +175,10 @@
 
         </fieldset>
 	</form>
-
     </section>
 
     <footer class="footer">
         <p class="footer-texto">FrontEnd Developer - todos los derechos reservados - CRS - 2023</p> 
     </footer>
-    
 </body>
 </html>

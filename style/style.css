@@ -1,6 +1,7 @@
 :root{
     --blanco: #fff;
     --negro: #000;
+    --secundario: #FFEFBA;
     --fuentePrincipal: 'Noto Serif', serif;
     --fuenteTitular: 'Playfair Display', serif;
 }
@@ -88,7 +89,7 @@ img{
     text-shadow: 5px 0px 3px rgba(0,0,0,0.6);
     margin-top: -1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: #FFEFBA solid;
+    border-bottom: var(--secundario) solid;
     text-transform: none;
 }
 
@@ -104,9 +105,10 @@ img{
     justify-content: space-around;
     margin-bottom: 3rem;
     height: auto;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: darkgray;
     border-radius: 5%;
+    
 }
 
 .navegador_obj{
@@ -119,7 +121,7 @@ img{
 
 .navegador_obj:hover{
     cursor: pointer;
-    background-color: #FFEFBA;
+    background-color: var(--secundario);
     font-size: 2rem;
     font-weight: bold;
     border-radius: 25%;
@@ -128,25 +130,68 @@ img{
 
 /* MAIN */
 .contenedor{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+    margin: 4rem auto;
+    border-bottom: var(--secundario) solid;
+    border-top: var(--secundario) solid;
 }
 
-.misDatos{
-    display: flex;
-    flex-direction: column;
-    border: #FFEFBA solid;
-    width: 100%;
-    padding: 2rem;
+@media (min-width: 768px) {
+    .misDatos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        /* border: var(--secundario) solid; */
+        width: 100%;
+        padding: 3rem;
+    }
 }
+
 
 .personal p {
     font-size: 2.5rem;
+    background-color: goldenrod;
 }
 
 .datos p{
     text-align: center;
+}
+
+.datos h3{
+    font-size: 2rem;
+}
+
+.correo p {
+    text-transform: none;
+}
+
+/* EXPERIENCIA LABORAL */
+
+.laboral{
+    margin-top: 4rem;
+    border-bottom: var(--secundario) solid;
+}
+.trabajo{
+    padding: 2rem;
+}
+
+.trabajo h3{
+    font-size: 2.5rem;
+}
+
+/* SECTION CONOCIMIENTOS */
+
+.conocimientos{
+    margin-top: 5rem;
+    padding: 2rem;
+    border-bottom: var(--secundario) solid;
+}
+
+@media (min-width: 768px) {
+    .aprendizaje{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
 
 /* CONTACTO */
@@ -154,6 +199,7 @@ img{
     background-color: darkgrey;
     margin: 0 auto;
     padding: 2rem;
+
 }
 
 #formulario fieldset{
@@ -217,4 +263,10 @@ img{
     font-size: 2rem;
     padding: 1rem 2rem;
     border-radius: 15%;
+    width: 14rem;
+}
+
+.boton:hover{
+    background-color: var(--secundario);
+    font-weight: bold;
 }
