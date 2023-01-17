@@ -27,6 +27,10 @@ h1, h2, h3{
     color: var(--negro);
 }
 
+h3{
+    text-transform: capitalize;
+}
+
 p{
     font-family: var(--fuentePrincipal);
     color: var(--negro);
@@ -85,6 +89,7 @@ img{
     margin-top: -1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: #FFEFBA solid;
+    text-transform: none;
 }
 
 @media (min-width: 768px) {
@@ -98,6 +103,10 @@ img{
     display: flex;
     justify-content: space-around;
     margin-bottom: 3rem;
+    height: auto;
+    padding: 0.5rem;
+    background-color: darkgray;
+    border-radius: 5%;
 }
 
 .navegador_obj{
@@ -105,21 +114,23 @@ img{
     font-size: 2rem;
     text-decoration: none;
     font-weight: bold;
-    color: var(--negro);
+    color: var(--blanco);
 }
 
 .navegador_obj:hover{
     cursor: pointer;
-    background-color: burlywood;
-    font-size: 2.2rem;
+    background-color: #FFEFBA;
+    font-size: 2rem;
     font-weight: bold;
-    border-radius: 20%;
+    border-radius: 25%;
+    color: var(--negro);
 }
 
 /* MAIN */
 .contenedor{
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .misDatos{
@@ -132,4 +143,64 @@ img{
 
 .datos p{
     text-align: center;
+}
+
+/* CONTACTO */
+#formulario{
+    background-color: darkgrey;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#formulario fieldset{
+    border: none;
+}
+
+#formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 2rem;
+        column-gap: 1rem;
+    }
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* FOOTER */
+.footer{
+    padding: 1rem;
+    text-align: center;
+}
+.footer-texto{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
 }

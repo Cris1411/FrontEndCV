@@ -19,7 +19,7 @@
             <img src="/img/undraw_startup_life_re_8ow9.svg" alt="startup">
         </div>
 
-        <p class="detalles_info">Dando rienda suelta a mi aprendizaje para mi nueva etapa FrontEnd Developer Full Stack!!</p>
+        <p class="detalles_info">Dando rienda suelta a mi aprendizaje... para mi nueva etapa FrontEnd Developer Full Stack!!</p>
 
     </header>
 
@@ -28,7 +28,7 @@
             <a href="#" class="navegador_obj">Inicio</a>
             <a href="#" class="navegador_obj">Sobre Mi</a>
             <a href="#" class="navegador_obj">Cursos</a>
-            <a href="#" class="navegador_obj">Contacto</a>
+            <a href="#formulario" class="navegador_obj">Contacto</a>
         </div>
     </nav>
     <main class="contenedor">
@@ -58,7 +58,7 @@
             <div class="datos">
                 <h3>PSA Peugeot Citröen</h3>
                 <p>Operario de produccion senior</p>
-                <p>2003 / 2012</p>
+                <p>2003 / 2013</p>
             </div>
 
             <div class="datos">
@@ -73,14 +73,54 @@
                 <p>sector "Dispositivos Moviles"</p>
                 <p>2016 / hoy en dia</p>
             </div>
-
         </article>
-        <aside>
-
-        </aside>
     </main>
-    <footer>
+    <section class="Estudios y conocimientos">
 
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+
+	<form id="formulario">
+        <fieldset>
+            <legend>Contactame llenando todos los campos</legend>
+
+            <div class="contenedor-campos">
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="input-text" id="nombre" type="text" placeholder="tu nombre">
+                </div>
+                        
+                <div class="campo">
+                    <label for="">Telefono</label>
+                    <input class="input-text" type="tel" placeholder="tu telefono">
+                </div>
+                        
+                <div class="campo">
+                    <label for="">Correo</label>
+                    <input class="input-text"  type="email" placeholder="tu correo">
+                </div>
+        
+                <div class="campo">
+                    <label for="">Mensaje</label>
+                    <textarea class="input-text" name="" id="" cols="20" rows="5"></textarea>
+                </div>
+
+            </div>  <!-- .contenedor-campos, cierre -->
+
+            <div class="alinear-derecha flex">
+                <button class="boton w-100" type="submit">Enviar</button>
+            </div>
+
+        </fieldset>
+	</form>
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer-texto">FrontEnd Developer - todos los derechos reservados - CRS - 2023</p> 
     </footer>
     
 </body>
