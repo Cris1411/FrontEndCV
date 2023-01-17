@@ -141,6 +141,10 @@ img{
     padding: 2rem;
 }
 
+.personal p {
+    font-size: 2.5rem;
+}
+
 .datos p{
     text-align: center;
 }
@@ -202,5 +206,15 @@ img{
 .footer-texto{
     font-size: 1.5rem;
     margin-top: 2rem;
+}
 
+.alinear-derecha{
+    display: flex;
+    justify-content: end;
+}
+
+.boton{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 15%;
 }
