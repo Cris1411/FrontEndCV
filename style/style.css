@@ -22,7 +22,6 @@ body{
     background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 }
 
-
 h1, h2, h3{
     font-family: var(--fuenteTitular);
     color: var(--negro);
@@ -58,7 +57,7 @@ img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 35rem;
+    height: 70vh;
 }
 
 .detalles_titulo{
@@ -86,7 +85,7 @@ img{
     text-align: justify;
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 5px 0px 3px rgba(0,0,0,0.6);
+    text-shadow: 3px 0px 2px rgba(0,0,0,0.6);
     margin-top: -1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: var(--secundario) solid;
@@ -133,6 +132,7 @@ img{
     margin: 4rem auto;
     border-bottom: var(--secundario) solid;
     border-top: var(--secundario) solid;
+    height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -145,7 +145,6 @@ img{
         padding: 3rem;
     }
 }
-
 
 .personal p {
     font-size: 2.5rem;
@@ -165,7 +164,6 @@ img{
 }
 
 /* EXPERIENCIA LABORAL */
-
 .laboral{
     margin-top: 4rem;
     border-bottom: var(--secundario) solid;
@@ -179,11 +177,21 @@ img{
 }
 
 /* SECTION CONOCIMIENTOS */
-
 .conocimientos{
     margin-top: 5rem;
     padding: 2rem;
     border-bottom: var(--secundario) solid;
+    height: 100vh;
+}
+
+.conocimientos h3{
+    font-size: 3rem;
+}
+
+.conocimientos li{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: rgb(249, 2, 2);
 }
 
 @media (min-width: 768px) {
@@ -244,6 +252,19 @@ img{
     border-radius: 0.5rem;
 }
 
+.boton{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 15%;
+    width: 14rem;
+}
+
+.boton:hover{
+    background-color: var(--secundario);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* FOOTER */
 .footer{
     padding: 1rem;
@@ -257,16 +278,4 @@ img{
 .alinear-derecha{
     display: flex;
     justify-content: end;
-}
-
-.boton{
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 15%;
-    width: 14rem;
-}
-
-.boton:hover{
-    background-color: var(--secundario);
-    font-weight: bold;
 }
