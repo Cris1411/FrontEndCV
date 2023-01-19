@@ -165,15 +165,17 @@ p{
 
 /* EXPERIENCIA LABORAL */
 .laboral{
-    margin-top: 2rem;
+    margin: 0 auto;
     border-bottom: var(--secundario) solid;
 }
 
-.trabajoTop{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    align-items: center;
-    gap: 3rem;
+@media (min-width: 768px) {
+    .trabajoTop{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 .imgLaboral img{
@@ -184,6 +186,7 @@ p{
 
 .trabajo{
     padding: 1rem;
+    margin: auto;
 }
 
 .trabajo h3{
@@ -192,16 +195,17 @@ p{
 
 /* SECTION CONOCIMIENTOS */
 .conocimientos{
-    margin: auto;
-    padding: 2rem;
+    margin: 5rem;
     border-bottom: var(--secundario) solid;
     height: 100vh;
+    
 }
 
-.aprendizaje{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+@media (min-width: 768px) {
+    .aprendizaje{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .conocimientos h3{
@@ -212,6 +216,15 @@ p{
     font-size: 2.5rem;
     line-height: 4rem;
     color: rgb(249, 2, 2);
+}
+
+.centImg{
+    text-align: center;
+}
+.imgNoteb{
+    margin: 2rem;
+    height: 30rem;
+    padding-bottom: 5rem;
 }
 
 /* CONTACTO */
