@@ -1,12 +1,58 @@
+document.addEventListener('DOMContentLoaded', () => {
 
-const nombre = document.querySelector('#nombre');
+    const datos = {
+        nombre: '',
+        telefono: '',
+        correo: '',
+        mensaje: ''
+    };
 
-nombre.addEventListener('blur', e => {
-        const name = e.target.value;
+    const nombre = document.querySelector('#nombre');
+    const telefono = document.querySelector('#telefono');
+    const correo = document.querySelector('#correo');
+    const mensaje = document.querySelector('#mensaje');
 
-        if (name === "") {
-            console.log('campo vacio');
+    const formulario = document.querySelector('#formulario');
+
+    nombre.addEventListener('blur', leertTexto);
+    telefono.addEventListener('blur', leertTexto);
+    correo.addEventListener('blur', leertTexto);
+    mensaje.addEventListener('blur', leertTexto);
+
+    
+    formulario.addEventListener('submit', function(evento){
+        evento.preventDefault();
+
+        const { nombre, telefono, correo, mensaje} = datos;
+
+        if (nombre === '' || correo === '' || mensaje === ''){
+            mostrarAlerta('Tu nombre, mail y mensaje son obligatorios');
+            return; //cortar ejecucion del codigo
+        };
+
+        mostrarAlerta('enviado correctamente, muchas gracias!')
+    });
+
+
+    function leertTexto(e){
+        datos[e.target.id] = e.target.value;
+    };
+
+
+    function mostrarAlerta(mensaje, error = null){
+        const alerta = document.createElement('P');
+        alerta.textContent = mensaje;
+
+        if (error){
+            alerta.classList.add(error);
         } else {
-            console.log(`Algo se escribió`);
-        }
+            alerta.classList.add(exito);
+        };
+
+        formulario.appendChild(alerta);
+
+        setTimeout(() => {
+            error.remove();
+        }, 3000);
+    };
 });

@@ -166,6 +166,7 @@ p{
 /* EXPERIENCIA LABORAL */
 .laboral{
     margin: 0 auto;
+    height: 100vh;
     border-bottom: var(--secundario) solid;
 }
 
@@ -194,6 +195,10 @@ p{
 }
 
 /* SECTION CONOCIMIENTOS */
+#datos{
+    height: 100vh;
+}
+
 .conocimientos{
     margin: 5rem;
     border-bottom: var(--secundario) solid;
@@ -224,10 +229,27 @@ p{
 .imgNoteb{
     margin: 2rem;
     height: 30rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
 }
 
 /* CONTACTO */
+.error{
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.exito{
+    background-color: rgb(12, 223, 33);
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
 #formulario{
     background-color: darkgrey;
     margin: 0 auto;
