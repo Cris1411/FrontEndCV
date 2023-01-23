@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const { nombre, telefono, correo, mensaje} = datos;
 
         if (nombre === '' || correo === '' || mensaje === ''){
-            mostrarAlerta('Tu nombre, mail y mensaje son obligatorios');
+            mostrarAlerta('Tu nombre, mail y mensaje son obligatorios', true);
             return; //cortar ejecucion del codigo
         };
 
@@ -44,15 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
         alerta.textContent = mensaje;
 
         if (error){
-            alerta.classList.add(error);
+            alerta.classList.add('error');
         } else {
-            alerta.classList.add(exito);
+            alerta.classList.add('exito');
         };
 
         formulario.appendChild(alerta);
 
         setTimeout(() => {
-            error.remove();
+            alerta.remove();
         }, 3000);
     };
 });

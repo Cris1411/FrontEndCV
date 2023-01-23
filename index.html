@@ -14,13 +14,13 @@
     <!-- HEADER -->
     <header>
 
-        <div class="detalles">
-            <img class="detalles_img" src="/img/crs.jpg" alt="CRS">
-            <h1 class="detalles_titulo">Cristian R. Sanchez</h1>
-            <img class="detalles_img2" src="/img/undraw_startup_life_re_8ow9.svg" alt="startup">
-        </div>
+        <div class="encabezado">
+            <img class="encabezado_img" src="/img/crs.jpg" alt="CRS">
+            <h1 class="encabezado_titulo">Cristian R. Sanchez</h1>
+            <img class="encabezado_img2" src="/img/undraw_startup_life_re_8ow9.svg" alt="startup">
 
-        <p class="detalles_info">Dando rienda suelta a mi aprendizaje... para mi nueva etapa FrontEnd Developer Full Stack!!</p>
+            <p class="encabezado_frase">Dando rienda suelta a mi aprendizaje... para mi nueva etapa FrontEnd Developer Full Stack!!</p>
+        </div>
 
     </header> <!-- fin header -->
 
@@ -86,11 +86,26 @@
                     <p>11-2406-5292</p>
                 </div>
             </article>
-        </section>    
+        </section>   
+
+        <section class="titulos">
+            <div class="datos">
+                <h3>Estudios Secundarios</h3>
+                <p>Bachillerato Mercantil</p>
+                <p>Intituto Leonardo Murialdo</p>
+            </div>
+            
+            <div class="datos">
+                <h3>Estudios terciarios</h3>
+                <p>Tecnico Programador</p>
+                <p>I.S.F.T. N°185</p>
+            </div>
+            
+        </section>
     </main> <!-- fin datos -->
 
     <!-- SECTION EXPERIENCIA LABORAL -->
-    <section class="laboral">
+    <section id="experiencia" class="laboral">
         <h2>Experiencia</h2>
 
         <div class="trabajoTop">
@@ -123,7 +138,7 @@
     </section> <!-- fin experiencia laboral -->
 
     <!-- SECTION ESTUDIOS -->
-    <section class="conocimientos">
+    <section id="estudios" class="conocimientos">
         <h2>Estudios y conocimientos</h2>
 
         <article class="aprendizaje">
@@ -176,11 +191,11 @@
                     </svg> GITHUB</li>
                 </ul>
             </div>
-        </article>
 
-        <div class="centImg">
-            <img class="imgNoteb" src="/img/notebook.jpg" alt="notebook">
-        </div>
+            <div class="centImg">
+                <img class="imgNoteb" src="/img/notebook.jpg" alt="notebook">
+            </div>
+        </article>
     </section> <!-- fin conocimientos -->
 
     <!-- FORMULARIO CONTACTO -->
@@ -200,7 +215,7 @@
                         
                 <div class="campo">
                     <label for="">Telefono</label>
-                    <input class="input-text" id="telefono" type="tel" placeholder="tu telefono">
+                    <input class="input-text" id="telefono" type="tel" placeholder="tu telefono (opcional)">
                 </div>
                         
                 <div class="campo">
