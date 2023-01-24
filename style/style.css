@@ -142,23 +142,18 @@ p{
 
 /* MAIN */
 .contenedor{
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
-    .misDatos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2rem;
-        width: 100%;
-        padding: 1.5rem;
-        height: 100vh;
-    }
+.misDatos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
 }
+
 
 .misDatos_pers p {
     font-size: 2.5rem;
@@ -187,6 +182,10 @@ p{
 
 .titulo{
     padding-top: 0.1rem;
+}
+
+.prueba{
+    display: block;
 }
 
 .titulo h3{
