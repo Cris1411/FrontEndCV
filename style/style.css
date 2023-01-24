@@ -38,6 +38,7 @@ p{
 }
 
 .container{
+    display: block;
     max-width: 90%;
     margin: auto;
 }
@@ -156,7 +157,7 @@ p{
     height: 100vh;
 }
 
-.personal p {
+.misDatos_pers p {
     font-size: 2.5rem;
     background-color: goldenrod;
 }
@@ -180,29 +181,37 @@ p{
 
 /* EXPERIENCIA LABORAL */
 .laboral{
-    margin: 0 auto;
+    margin: auto;
     height: 100vh;
     border-bottom: var(--secundario) solid;
 }
 
-@media (min-width: 1280px) {
+.trabajoTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 480px ) {
     .trabajoTop{
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
-        column-gap: 3rem;
+        flex-direction: column;
     }
 }
 
 .imgLaboral img{
-    width: 240px;
+    display: block;
     border-radius: 15%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 480px ) {
     .imgLaboral img{
-        width: 480px;
+        display: none;
     }
 }
 
@@ -212,23 +221,28 @@ p{
 }
 
 .trabajo h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
+
+@media (min-width: 768px) {
+    .trabajo h3{
+        font-size: 2.5rem;
+    }
+}
+
 
 /* SECTION CONOCIMIENTOS */
 .conocimientos{
-    margin: 5rem;
+    margin-bottom: 5rem;
     border-bottom: var(--secundario) solid;
     height: 100vh;
 }
 
-@media (min-width: 1280px) {
-    .aprendizaje{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 3rem;
-    }
+.aprendizaje{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 3rem;
 }
 
 .conocimientos h3{
@@ -244,12 +258,14 @@ p{
 .centImg{
     grid-column: 1 / 3;
     text-align: center;
-    grid-row: unset;
+    border-radius: 15%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .imgNoteb{
     margin: 2rem;
-    height: 30rem;
+    width: 40rem;
 }
 
 /* CONTACTO */
