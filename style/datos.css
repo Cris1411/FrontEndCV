@@ -1,0 +1,49 @@
+/* Estilos específicos para la sección Datos */
+
+.datos {
+    background: linear-gradient(135deg, #f4f9fd 80%, #eaf6fb 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 18px rgba(44,62,80,0.07);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-primario);
+    border: 1px solid #e3eafc;
+}
+.datos h2, .datos h3 {
+    color: var(--color-secundario);
+    font-family: var(--fuenteTitular);
+    text-align: center;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+.datos p {
+    text-align: center;
+    color: #3d4f5c;
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+    font-family: var(--fuentePrincipal);
+}
+.datos strong {
+    color: var(--color-primario);
+}
+.datos a {
+    color: var(--color-secundario);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.datos a:hover {
+    color: var(--color-primario);
+}
+@media (max-width: 600px) {
+    .datos {
+        padding: 1.2rem 0.5rem;
+        border-radius: 0.7rem;
+    }
+    .datos h2, .datos h3 {
+        font-size: 1.5rem;
+    }
+    .datos p {
+        font-size: 1.2rem;
+    }
+}

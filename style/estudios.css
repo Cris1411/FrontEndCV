@@ -1,0 +1,62 @@
+/* Estilos específicos para la sección Estudios */
+
+.estudios {
+    background: linear-gradient(135deg, #e3eafc 60%, #f4f9fd 100%);
+    border-radius: 1.3rem;
+    box-shadow: 0 2px 14px rgba(44,62,80,0.07);
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    margin: 2.5rem 0 2.5rem 4rem;
+    border: 1px solid #d3e0f0;
+    animation: fadeIn 0.7s;
+    transition: box-shadow 0.3s;
+}
+.estudios:hover {
+    box-shadow: 0 6px 32px rgba(44,62,80,0.13);
+}
+.estudios h3 {
+    color: var(--color-secundario);
+    font-family: var(--fuenteTitular);
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.estudios ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.estudios li {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 1px 6px rgba(44,62,80,0.08);
+    padding: 0.8rem 2rem;
+    font-size: 1.25rem;
+    color: #2c3e50;
+    font-weight: 500;
+    margin: 0;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.8s;
+}
+.estudios li:hover {
+    background: var(--color-secundario);
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(44,62,80,0.13);
+}
+@media (max-width: 700px) {
+    .estudios {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+        margin-left: 0.5rem;
+    }
+    .estudios ul {
+        gap: 0.6rem;
+    }
+    .estudios li {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

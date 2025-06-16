@@ -5,37 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Cristian R. Sanchez - Desarrollador FrontEnd">
+    <meta name="keywords" content="CV, FrontEnd, Developer, JavaScript, HTML, CSS">
+    <meta name="author" content="Cristian R. Sanchez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <title>Mi CV FrontEnd</title>
+    <title>Cristian R. Sanchez - FrontEnd Developer</title>
 </head>
 
 <body class="container">
     <!-- HEADER -->
-    <header>
-
+    <header role="banner">
         <div class="encabezado">
-            <img class="encabezado_img" src="/img/crs.jpg" alt="CRS">
+            <img class="encabezado_img" src="/img/crs.jpg" alt="Foto de perfil de Cristian R. Sanchez" width="160" height="160" loading="lazy">
             <h1 class="encabezado_titulo">Cristian R. Sanchez</h1>
-            <img class="encabezado_img2" src="/img/undraw_startup_life_re_8ow9.svg" alt="startup">
-
+            <img class="encabezado_img2" src="/img/undraw_startup_life_re_8ow9.svg" alt="Ilustración de desarrollo web" width="160" height="160" loading="lazy">
             <p class="encabezado_frase">Dando rienda suelta a mi aprendizaje... para mi nueva etapa FrontEnd Developer Full Stack!!</p>
         </div>
-
-    </header> <!-- fin header -->
+    </header>
 
     <hr>
     <!-- NAVEGADOR -->
-    <nav class="navegador-bg">
+    <nav class="navegador-bg" role="navigation" aria-label="Menú principal">
         <div class="navegador">
-            <a href="#datos" class="navegador_obj">Sobre Mi</a>
-            <a href="#experiencia" class="navegador_obj">Experiencia Laboral</a>
-            <a href="#estudios" class="navegador_obj">Cursos</a>
-            <a href="#formulario" class="navegador_obj">Contacto</a>
+            <a href="#datos" class="navegador_obj active">
+                <i class="fas fa-user"></i>
+                <span>Sobre Mi</span>
+            </a>
+            <a href="#experiencia" class="navegador_obj">
+                <i class="fas fa-briefcase"></i>
+                <span>Experiencia</span>
+            </a>
+            <a href="#estudios" class="navegador_obj">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Cursos</span>
+            </a>
+            <a href="#formulario" class="navegador_obj">
+                <i class="fas fa-envelope"></i>
+                <span>Contacto</span>
+            </a>
         </div>
     </nav> <!-- fin navegador -->
 
@@ -134,23 +147,23 @@
 
         <div class="trabajoTop">
             <article class="trabajos">
-                <div class="trabajo">
-                    <h3>PSA Peugeot Citröen</h3>
-                    <p>Oficial de produccion</p>
-                    <p>2005 / 2015</p>
+                <div class="trabajo-card">
+                    <div class="trabajo-empresa">PSA Peugeot Citröen</div>
+                    <div class="trabajo-puesto">Oficial de producción</div>
+                    <div class="trabajo-fechas">2005 - 2015</div>
                 </div>
 
-                <div class="trabajo">
-                    <h3>Phillips</h3>
-                    <p>Operario de produccion</p>
-                    <p>2016</p>
+                <div class="trabajo-card">
+                    <div class="trabajo-empresa">Phillips</div>
+                    <div class="trabajo-puesto">Operario de producción</div>
+                    <div class="trabajo-fechas">2016</div>
                 </div>
 
-                <div class="trabajo">
-                    <h3>COTO CICSA</h3>
-                    <p>Tecnico Senior</p>
-                    <p>sector "Dispositivos Moviles"</p>
-                    <p>2016 / hoy en dia</p>
+                <div class="trabajo-card">
+                    <div class="trabajo-empresa">COTO CICSA</div>
+                    <div class="trabajo-puesto">Técnico Senior</div>
+                    <div class="trabajo-sector">Sector: Dispositivos Móviles</div>
+                    <div class="trabajo-fechas">2016 - Hoy en día</div>
                 </div>
             </article>
 
@@ -242,47 +255,59 @@
 
     <hr>
     <!-- FORMULARIO CONTACTO -->
-    <section>
-        <h2>Contacto</h2>
+    <section id="formulario" aria-labelledby="contacto-titulo">
+        <h2 id="contacto-titulo">Contacto</h2>
 
-        <form id="formulario" action="" method="post" enctype="text/plain">
+        <form action="#" method="post" class="formulario-contacto" novalidate>
             <fieldset>
                 <legend>Contactame llenando todos los campos</legend>
 
                 <div class="contenedor-campos">
-
                     <div class="campo">
                         <label for="nombre">Nombre</label>
-                        <input class="input-text" id="nombre" type="text" placeholder="tu nombre">
+                        <input class="input-text" id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+                        <span class="mensaje-error"></span>
                     </div>
 
                     <div class="campo">
-                        <label for="">Telefono</label>
-                        <input class="input-text" id="telefono" type="tel" placeholder="tu telefono (opcional)">
+                        <label for="telefono">Teléfono</label>
+                        <input class="input-text" id="telefono" name="telefono" type="tel" placeholder="Tu teléfono (opcional)" pattern="[0-9]{2,4}-[0-9]{6,8}">
+                        <span class="mensaje-error"></span>
                     </div>
 
                     <div class="campo">
-                        <label for="">Correo</label>
-                        <input class="input-text" id="correo" type="email" placeholder="tu correo">
+                        <label for="correo">Correo</label>
+                        <input class="input-text" id="correo" name="correo" type="email" placeholder="Tu correo electrónico" required>
+                        <span class="mensaje-error"></span>
                     </div>
 
                     <div class="campo">
                         <label for="mensaje">Mensaje</label>
-                        <textarea title="mensaje" class="input-text" name="" id="mensaje" cols="20" rows="5"></textarea>
+                        <textarea class="input-text" id="mensaje" name="mensaje" cols="30" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        <span class="mensaje-error"></span>
                     </div>
-                </div> <!-- .contenedor-campos, cierre -->
-
-                <div class="alinear-derecha">
-                    <button class="boton" type="submit">Enviar</button>
                 </div>
 
+                <div class="alinear-derecha">
+                    <button class="boton" type="submit">
+                        <span class="boton-texto">Enviar</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
             </fieldset>
         </form>
     </section> <!-- fin formulario -->
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p class="footer-texto">FrontEnd Developer - todos los derechos reservados - CRS - 2023</p>
+        <div class="footer-contenido">
+            <p class="footer-texto">FrontEnd Developer - todos los derechos reservados - CRS - 2023</p>
+            <div class="redes-sociales">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer> <!-- fin footer -->
 
     <script src="/script/script.js"></script>

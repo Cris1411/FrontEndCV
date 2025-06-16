@@ -1,0 +1,146 @@
+/* Estilos específicos para la sección Experiencia */
+
+.laboral {
+    margin: 4rem auto 0 auto;
+    padding: 4rem 0 2rem 0;
+    background: linear-gradient(135deg, #f8fafc 70%, #e3eafc 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 24px rgba(44,62,80,0.07);
+    min-height: 60vh;
+    max-width: 1100px;
+}
+.laboral h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    color: var(--color-primario);
+    font-family: var(--fuenteTitular);
+}
+.trabajoTop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex: 2;
+}
+.trabajo-card {
+    background: var(--blanco);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 18px rgba(44,62,80,0.09);
+    padding: 2.8rem 2.5rem;
+    min-width: 270px;
+    max-width: 340px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadeIn 0.7s;
+}
+.trabajo-card:hover {
+    box-shadow: 0 8px 32px rgba(44,62,80,0.17);
+    transform: translateY(-5px) scale(1.03);
+}
+.trabajo-empresa {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+    font-family: var(--fuenteTitular);
+}
+.trabajo-puesto {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+.trabajo-sector {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #5d6d7e;
+    margin-bottom: 0.5rem;
+}
+.trabajo-fechas {
+    font-size: 1.2rem;
+    color: #7b8a8b;
+    background: #f0f4f8;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1rem;
+    align-self: flex-end;
+    margin-top: 0.7rem;
+}
+@media (max-width: 900px) {
+    .laboral {
+        padding: 2rem 0.5rem;
+    }
+    .trabajoTop {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .trabajos {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    .trabajo-card {
+        max-width: 98vw;
+        min-width: unset;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .laboral {
+        padding: 1rem 0.1rem;
+        border-radius: 0.7rem;
+    }
+    .trabajo-card {
+        padding: 1.5rem 1rem;
+    }
+    .trabajo-empresa {
+        font-size: 1.4rem;
+    }
+    .trabajo-puesto {
+        font-size: 1.2rem;
+    }
+    .trabajo-sector {
+        font-size: 1rem;
+    }
+    .trabajo-fechas {
+        font-size: 1rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+.trabajoTop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 2rem;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    .trabajoTop {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.imgLaboral img {
+    display: block;
+    border-radius: 15%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 480px) {
+    .imgLaboral img {
+        display: none;
+    }
+}
