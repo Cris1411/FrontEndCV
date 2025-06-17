@@ -28,7 +28,8 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    flex: 2;
+    flex: 1 1 55%;
+    max-width: 60%;
 }
 .trabajo-card {
     background: var(--blanco);
@@ -90,11 +91,18 @@
         flex-direction: column;
         gap: 2rem;
         width: 100%;
+        flex: none;
+        max-width: 100%;
     }
     .trabajo-card {
         max-width: 98vw;
         min-width: unset;
         width: 100%;
+    }
+    .imgLaboral {
+        width: 100%;
+        flex: none;
+        max-width: 100%;
     }
 }
 @media (max-width: 600px) {
@@ -119,13 +127,6 @@
         padding: 0.2rem 0.5rem;
     }
 }
-.trabajoTop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    column-gap: 2rem;
-    text-align: center;
-}
 @media (max-width: 480px) {
     .trabajoTop {
         display: flex;
@@ -133,14 +134,60 @@
         flex-direction: column;
     }
 }
+.imgLaboral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    animation: fadeIn 0.7s;
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+
 .imgLaboral img {
     display: block;
-    border-radius: 15%;
     max-width: 100%;
-    margin: 0 auto;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.15);
+    border: 3px solid #e3eafc;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+    background: linear-gradient(135deg, #f4f9fd 80%, #eaf6fb 100%);
+    padding: 1rem;
 }
-@media (max-width: 480px) {
+
+.imgLaboral img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 12px 40px rgba(44,62,80,0.25);
+    border-color: var(--color-secundario);
+}
+
+@media (max-width: 900px) {
+    .imgLaboral {
+        padding: 1.5rem;
+    }
+    
     .imgLaboral img {
+        max-width: 90%;
+        border-radius: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgLaboral {
+        padding: 1rem;
+    }
+    
+    .imgLaboral img {
+        max-width: 85%;
+        border-radius: 1rem;
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgLaboral {
         display: none;
     }
 }
