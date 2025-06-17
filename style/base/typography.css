@@ -1,0 +1,57 @@
+/* Tipografía */
+h1, h2, h3 {
+    font-family: var(--fuenteTitular);
+    color: var(--negro);
+}
+
+h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 800;
+    background: linear-gradient(90deg, #fefefe 10%, #7ec8e3 50%, #3498db 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2.5px;
+    margin: 2.5rem auto 2rem auto;
+    padding-bottom: 0.5rem;
+    position: relative;
+    text-shadow:
+        2px 2px 8px #fff,
+        0 2px 20px #7ec8e3,
+        0 4px 32px #3498db,
+        1px 1px 0 #fff,
+        0 0 2px #fff;
+    filter: drop-shadow(0 2px 8px #fff8);
+    animation: fadeIn 1.1s;
+    z-index: 2;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin: 1.2rem auto 0 auto;
+    background: linear-gradient(90deg, #3498db 0%, #2c3e50 100%);
+    border-radius: 3px;
+    opacity: 0.85;
+    transition: width 0.3s;
+}
+
+h1:hover::after {
+    width: 120px;
+    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+p {
+    font-family: var(--fuentePrincipal);
+    color: var(--negro);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}

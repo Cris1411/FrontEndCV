@@ -1,0 +1,12 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --secundario: #FFEFBA;
+    --fuentePrincipal: 'Noto Serif', serif;
+    --fuenteTitular: 'Playfair Display', serif;
+    --color-primario: #2c3e50;
+    --color-secundario: #3498db;
+    --sombra: 0 2px 4px rgba(0,0,0,0.1);
+    --gradiente-primario: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    --gradiente-secundario: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+}

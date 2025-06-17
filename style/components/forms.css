@@ -1,0 +1,17 @@
+/* Formularios */
+input, textarea, select {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1.5px solid var(--color-secundario);
+    box-shadow: 0 0 0 2px #3498db33;
+    outline: none;
+}

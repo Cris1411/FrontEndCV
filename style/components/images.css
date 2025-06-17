@@ -1,0 +1,25 @@
+.imgNoteb {
+    display: block;
+    margin: 2.5rem auto;
+    max-width: 420px;
+    width: 90%;
+    border-radius: 1.5rem;
+    border: 2px solid #e3eafc;
+    box-shadow: 0 6px 32px rgba(44,62,80,0.10), 0 1.5px 10px rgba(52,152,219,0.07);
+    background: linear-gradient(135deg, #f4f9fd 80%, #eaf6fb 100%);
+    transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s, border-color 0.35s;
+    padding: 0.7rem;
+    object-fit: cover;
+    animation: fadeIn 0.7s;
+}
+.imgNoteb:hover {
+    transform: scale(1.04) rotate(-1.5deg);
+    box-shadow: 0 12px 40px rgba(44,62,80,0.18), 0 4px 24px rgba(52,152,219,0.11);
+    border-color: var(--color-secundario);
+}
+@media (max-width: 600px) {
+    .imgNoteb {
+        max-width: 98vw;
+        padding: 0.3rem;
+    }
+}

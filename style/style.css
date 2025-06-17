@@ -1,3 +1,8 @@
+@import url('./utils/variables.css');
+@import url('./base/reset.css');
+@import url('./components/buttons.css');
+@import url('./components/cards.css');
+@import url('./components/images.css');
 @import url('./layout/header.css');
 @import url('./layout/navegador.css');
 @import url('./layout/footer.css');
@@ -6,31 +11,7 @@
 @import url('./components/experiencia.css');
 @import url('./components/datos.css');
 
-/* Variables globales */
-:root {
-    --blanco: #fff;
-    --negro: #000;
-    --secundario: #FFEFBA;
-    --fuentePrincipal: 'Noto Serif', serif;
-    --fuenteTitular: 'Playfair Display', serif;
-    --color-primario: #2c3e50;
-    --color-secundario: #3498db;
-    --sombra: 0 2px 4px rgba(0,0,0,0.1);
-    --gradiente-primario: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-    --gradiente-secundario: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-}
 
-/* Reset y estilos base */
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
 
 body {
     font-size: 1.6rem;
@@ -48,63 +29,8 @@ body {
 .text-center { text-align: center; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
 
-/* Tipografía */
-h1, h2, h3 {
-    font-family: var(--fuenteTitular);
-    color: var(--negro);
-}
+@import url('./base/typography.css');
 
-h1 {
-    font-size: 4.5rem;
-    text-align: center;
-    font-weight: 800;
-    background: linear-gradient(90deg, #fefefe 10%, #7ec8e3 50%, #3498db 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 2.5px;
-    margin: 2.5rem auto 2rem auto;
-    padding-bottom: 0.5rem;
-    position: relative;
-    text-shadow:
-        2px 2px 8px #fff,
-        0 2px 20px #7ec8e3,
-        0 4px 32px #3498db,
-        1px 1px 0 #fff,
-        0 0 2px #fff;
-    filter: drop-shadow(0 2px 8px #fff8);
-    animation: fadeIn 1.1s;
-    z-index: 2;
-}
-
-h1::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 5px;
-    margin: 1.2rem auto 0 auto;
-    background: linear-gradient(90deg, #3498db 0%, #2c3e50 100%);
-    border-radius: 3px;
-    opacity: 0.85;
-    transition: width 0.3s;
-}
-
-h1:hover::after {
-    width: 120px;
-    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
-}
-
-h3 {
-    text-transform: capitalize;
-}
-
-p {
-    font-family: var(--fuentePrincipal);
-    color: var(--negro);
-    font-size: 1.8rem;
-    text-transform: capitalize;
-}
 
 /* Componentes comunes */
 .boton, button, .btn {
@@ -145,37 +71,11 @@ button:hover,
     transform: translateY(-6px) scale(1.02);
 }
 
-/* Formularios */
-input, textarea, select {
-    font-family: var(--fuentePrincipal);
-    font-size: 1.6rem;
-    border: 1px solid #ccc;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    transition: all 0.3s ease;
-}
+@import url('./components/forms.css');
 
-input:focus, textarea:focus, select:focus {
-    border: 1.5px solid var(--color-secundario);
-    box-shadow: 0 0 0 2px #3498db33;
-    outline: none;
-}
 
-/* Mensajes */
-.mensaje {
-    padding: 1.5rem 2rem;
-    border-radius: 1rem;
-    margin: 2rem 0;
-    font-size: 1.7rem;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.12);
-    background: #f8f9fa;
-    border-left: 5px solid var(--color-secundario);
-    animation: fadeIn 0.5s ease-out;
-    text-align: center;
-    font-weight: 600;
-}
+@import url('./components/messages.css');
+
 
 .mensaje.error {
     border-color: #c0392b;

@@ -1,0 +1,22 @@
+.boton,
+.btn,
+button {
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: var(--sombra);
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.boton:hover,
+button:hover,
+.btn:hover {
+    background: var(--gradiente-secundario);
+    color: var(--color-secundario);
+    box-shadow: 0 4px 12px rgba(44,62,80,0.18);
+    transform: translateY(-3px);
+}
